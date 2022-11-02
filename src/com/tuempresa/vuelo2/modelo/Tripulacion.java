@@ -9,7 +9,8 @@ import org.openxava.annotations.*;
 import lombok.*;
 
 @Entity @Getter @Setter
-public class Tripulacion {
+public class Tripulacion extends Superclass{
+	
 	
 	@Column(length = 32)
 	String nombre;
@@ -23,6 +24,5 @@ public class Tripulacion {
 	
 	@ManyToOne
 	Empleado empleado;
-
 
 }

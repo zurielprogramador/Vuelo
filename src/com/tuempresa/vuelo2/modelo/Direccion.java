@@ -2,6 +2,8 @@ package com.tuempresa.vuelo2.modelo;
 
 import javax.persistence.*;
 
+import org.openxava.annotations.*;
+
 import lombok.*;
 
 @Entity
@@ -21,6 +23,7 @@ public class Direccion {
 	@Column(length = 32)
 	String estado;
 	
-	@Column(length = 32)
-	String pais;
+	@ManyToOne
+	@DescriptionsList(descriptionProperties = "pais")
+	Pais pais;
 }

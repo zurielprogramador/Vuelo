@@ -7,7 +7,7 @@ import org.openxava.annotations.*;
 import lombok.*;
 
 @Entity @Getter @Setter
-public class Empleado {
+public class Empleado extends Superclass{
 	
 	@Column(length = 64)
 	String nombres;
